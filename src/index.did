@@ -1,0 +1,5 @@
+service: () -> {
+    crearTarea: (text) -> (record {id:principal; actividad:text});
+    eliminarTarea: (principal) -> (record {id:principal; actividad:text});
+    muestraTareas: () -> (vec record {id:principal; actividad:text}) query;
+}
